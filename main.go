@@ -208,7 +208,6 @@ type Game struct {
 func main() {
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Snake (Ebitengine Demo)")
-	// if err := ebiten.RunGame(newGame()); err != nil {
 	if err := ebiten.RunGame(&Game{}); err != nil {
 		log.Fatal(err)
 	}
