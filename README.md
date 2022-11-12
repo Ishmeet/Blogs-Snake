@@ -23,8 +23,13 @@ const (
 	screenHeight       = 480
 )
 ```
+The below information regarding RunGame is shamelessly copied from the code.
 
-// Some paragraph here for understanding below apis
+- RunGame starts the main loop and runs the game.
+- game's Update function is called every tick to update the game logic.
+- game's Draw function is called every frame to draw the screen.
+- game's Layout function is called when necessary, and you can specify the logical screen size by the function.
+
 ```
 func (g *Game) Update() error {
 	return nil
@@ -48,6 +53,13 @@ func main() {
 	}
 }
 ```
-
+Run it,
+```
+go run main.go
+```
+It will display an empty screen of 640x480 pixels.
 ![This is an image](https://github.com/Ishmeet/Blogs-Snake/blob/main/image1.png)
+
+Now, lets move on to adding our snake game logic and displaying some images.
+
 
